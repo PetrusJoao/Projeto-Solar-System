@@ -14,7 +14,7 @@ const renderPlanet = planets.map((planet) => (
 class SolarSystem extends Component {
   render() {
     return (
-      <div data-testid="solar-system">
+      <div data-testid="solar-system" className="solar-system">
         <Title headline="Planetas" />
         {renderPlanet}
       </div>
