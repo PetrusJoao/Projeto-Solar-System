@@ -1,22 +1,23 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import '../Styles.css';
 
 class MissionCard extends React.Component {
   render() {
     const { name, year, country, destination } = this.props;
     return (
-      <div data-testid="mission-card" mission_card>
+      <div className="MissionsCard" data-testid="mission-card" mission_card>
         <p data-testid="mission-name">
-          { name }
+          {`Missão: ${name}`}
         </p>
         <p data-testid="mission-year">
-          { year }
+          {`Ano: ${year}`}
         </p>
         <p data-testid="mission-country">
-          { country }
+          {`País: ${country}`}
         </p>
         <p data-testid="mission-destination">
-          { destination }
+          {`Destino: ${destination}`}
         </p>
       </div>
     );
