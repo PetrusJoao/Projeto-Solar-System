@@ -6,15 +6,17 @@ import SolarSystem from './components/SolarSystem';
 class App extends React.Component {
   render() {
     return (
-      <div className="Galaxy">
-        <div>
+      <div>
+        <div className="header">
           <Header />
         </div>
-        <div className="PlanetsContainer">
-          <SolarSystem />
-        </div>
-        <div className="MissionsContainer">
-          <Mission />
+        <div className="Galaxy">
+          <div className="PlanetsContainer">
+            <SolarSystem />
+          </div>
+          <div className="MissionsContainer">
+            <Mission />
+          </div>
         </div>
       </div>
     );

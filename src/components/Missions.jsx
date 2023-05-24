@@ -6,7 +6,7 @@ import MissionCard from './MissionCard';
 class Mission extends Component {
   render() {
     return (
-      <div data-testid="missions">
+      <div data-testid="missions" className="MissionsContainer">
         <Title headline="Missões" />
         { missions.map((mission) => (<MissionCard
           name={ mission.name }
